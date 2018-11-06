@@ -1,0 +1,22 @@
+{
+  "name": "electron-scratch",
+  "version": "1.0.0",
+  "description": "shopping list desktop app",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/DallasCarraher/electron-scratch.git"
+  },
+  "author": "Dallas Carraher",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DallasCarraher/electron-scratch/issues"
+  },
+  "homepage": "https://github.com/DallasCarraher/electron-scratch#readme",
+  "dependencies": {
+    "electron": "^3.0.8"
+  }
+}
