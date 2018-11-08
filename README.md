@@ -1,1 +1,3 @@
-# Electron Shopping List Desktop App
+# Electron To-Do List Desktop App
+
+## Practice with electron and vanilla javascript.
