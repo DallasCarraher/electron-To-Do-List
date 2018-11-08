@@ -1,6 +1,6 @@
-//electron app 'ShoppingList'
+//electron app 'To-Do List'
 
-process.env['ELECTRON_DISABLE_SECURITY_WARNINGS'] = 'true';
+process.env['ELECTRON_DISABLE_SECURITY_WARNINGS'] = 'true'; //would rather not have to do this.
 const electron = require('electron');
 const url = require('url');
 const path = require('path');
