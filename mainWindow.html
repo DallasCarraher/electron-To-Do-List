@@ -2,9 +2,12 @@
 <html lang="en">
 <head>
     <title>To Do List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 </head>
 <body>
-    <h1>To Do List</h1>
+    <div class="nav-wrapper">
+        <a class="brand-logo center">To-Do List</a>
+    </div>
     <ul></ul>
 
 
@@ -15,6 +18,7 @@
         
         //add item
         ipcRenderer.on('item:add', function(e, item){
+            ul.className = 'collection';
             const li = document.createElement('li');
             const itemText = document.createTextNode(item);
             li.appendChild(itemText);
