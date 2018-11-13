@@ -4,7 +4,10 @@
   "description": "shopping list desktop app",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/ToDoList.icns --prune=true --out=release-builds",
+    "package-win": "electron-packager . electron-ToDoList-app --overwrite --asar=true --platform=win32 --arch=ia32 --icon=assets/icons/win/ToDoList.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Electron ToDoList\"",    
+    "package-linux": "electron-packager . electron-tutorial-app --overwrite --asar=true --platform=linux --arch=x64 --icon=assets/icons/png/ToDoList.png --prune=true --out=release-builds"
   },
   "repository": {
     "type": "git",
@@ -18,5 +21,8 @@
   "homepage": "https://github.com/DallasCarraher/electron-scratch#readme",
   "dependencies": {
     "electron": "^3.0.8"
+  },
+  "devDependencies": {
+    "electron-packager": "^12.2.0"
   }
 }
