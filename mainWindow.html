@@ -6,7 +6,7 @@
 </head>
 <body>
     <div class="nav-wrapper">
-        <a class="brand-logo center">To-Do List</a>
+        <a href="#" class="brand-logo center">To-Do List</a>
     </div>
     <ul></ul>
 
@@ -20,6 +20,7 @@
         ipcRenderer.on('item:add', function(e, item){
             ul.className = 'collection';
             const li = document.createElement('li');
+            li.className = 'collection-item';
             const itemText = document.createTextNode(item);
             li.appendChild(itemText);
             ul.appendChild(li);
@@ -35,6 +36,9 @@
 
         function removeItem(e){
             e.target.remove();
+            if(ul.children.length == 0){
+                ul.className = '';
+            }
         }
 
 
