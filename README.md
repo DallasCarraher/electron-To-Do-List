@@ -1,3 +1,5 @@
 # Electron To-Do List Desktop App
 
-**Practice with electron and vanilla javascript.**
+**Practice project using electron and vanilla javascript.**
+
+Download the windows executable [Here] (https://www.dropbox.com/s/azfh20bxrmbby8z/electron-ToDoList-app-win32-ia32.zip?dl=0)
